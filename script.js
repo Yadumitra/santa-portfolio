@@ -1,7 +1,7 @@
 
 (function() {
     const giftTracker = document.querySelector("#Gift-Tracker");
-    if (!giftTracker) {
+    if (!giftTracker) { 
         return;
     }
 
