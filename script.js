@@ -1,14 +1,15 @@
-(function () {
+
+(function() {
     const giftTracker = document.querySelector("#Gift-Tracker");
     if (!giftTracker) {
-        console.error("Gift Tracker element not found.");
         return;
     }
 
     function updateCountdown() {
         const now = new Date();
-        const christmas = new Date(now.getFullYear(), 11, 25);
+        const christmas = new Date(now.getFullYear(), 11, 25); 
 
+        
         if (now > christmas) {
             christmas.setFullYear(christmas.getFullYear() + 1);
         }
@@ -26,24 +27,19 @@
         const minutes = Math.floor((timeDifference % (1000 * 60 * 60)) / (1000 * 60));
         const seconds = Math.floor((timeDifference % (1000 * 60)) / 1000);
 
-        const daysElement = giftTracker.querySelector("#days");
-        const hoursElement = giftTracker.querySelector("#hours");
-        const minutesElement = giftTracker.querySelector("#minutes");
-        const secondsElement = giftTracker.querySelector("#seconds");
-
-        if (daysElement) daysElement.textContent = days;
-        if (hoursElement) hoursElement.textContent = hours;
-        if (minutesElement) minutesElement.textContent = minutes;
-        if (secondsElement) secondsElement.textContent = seconds;
+         giftTracker.querySelector("#days").textContent = days;
+        giftTracker.querySelector("#hours").textContent = hours;
+        giftTracker.querySelector("#minutes").textContent = minutes;
+        giftTracker.querySelector("#seconds").textContent = seconds;
     }
 
     function showCelebration() {
         const countdownContainer = giftTracker.querySelector(".countdownContainer");
-        if (countdownContainer) {
-            countdownContainer.innerHTML = `<tr class="christmas"><td colspan="4">Merry Christmas! 🎄</td></tr>`;
-        }
+        countdownContainer.innerHTML = `<tr class="christmas"><td colspan="4">Merry Christmas! 🎄</td></tr>`;
     }
 
+    
     updateCountdown();
+
     const interval = setInterval(updateCountdown, 1000);
 })();
