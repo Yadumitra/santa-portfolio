@@ -3,6 +3,7 @@ body {
   font-family:italic;
   background:#BA0021;
   
+  
 }
 
 .navbar {
@@ -227,8 +228,8 @@ body {
   content: "";
   position: absolute;
   top: -500px;
-  left: 50%;
-  border-radius: 50%;
+  left: 100%;
+  border-radius: 100%;
   width: 8px;
   height: 8px;
   background: #fff;
@@ -249,8 +250,6 @@ body {
     180px 380px 4px 1px #fff;
 }
 
-/* slowSlow */
-
 @keyframes slowSnow {
   0% {
     transform: translate(0, 0);
@@ -266,3 +265,268 @@ body {
   }
 }
 
+#santa{
+  display:flex;
+  align-items:center;
+  padding:20px;
+}
+  #santa img {
+  max-width: 50%;
+  height: auto;
+  margin-right: 20px;
+}
+#santa p {
+  font-family: 'Merryweather', serif;
+  font-size: 1.3rem;
+  color: #ffff;
+}
+#MeetSanta{
+  background-color:#4a745e;
+  .cursor{
+    position: relative;
+    width: 24em;
+    margin: 0 auto;
+    border-right: 2px solid rgba(255,255,255,.75);
+    font-size: 30px;
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
+    transform: translateY(-50%);    
+}
+  color:maroon;
+  width:400px;
+  text-align:center;
+  align-items:center;
+  padding:10px;
+  border:2px solid yellow
+   display:block;
+   margin-left: auto;
+   margin-right: auto;
+   background-image: url('https://img.freepik.com/free-vector/golden-bokeh-lights-sparkling-background_1048-14865.jpg?t=st=1735396640~exp=1735400240~hmac=096237e570b8e52f88173248f05c3bcef9acc571e0ad0c8cb156da1056a9f86b&w=1060');
+   background-size: cover;
+  
+}
+#meet{
+  font-family: 'christmas card',sans-serif;
+  font-size: 22px;
+}
+
+.christ{
+   
+   font-style: italic;
+   height:100%;
+   width:100%;
+}
+ #about {
+      margin: 0 auto; /* to Center the content */
+      letter-spacing: .15em;
+    overflow: hidden; /*to Ensures that the content is not revealed until the animation */
+  border-right: .15em solid orange; /* cursor */
+  white-space: nowrap; /* sibgle line content*/
+  margin: 0 auto; 
+  letter-spacing: .15em;
+  animation: 
+    typing 3.5s steps(49, end),
+    blink-caret .75s step-end infinite;
+}
+
+    
+   @keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: orange; }
+}
+
+#p2{
+  letter-spacing: .15em;
+  /*font-family: 'Mountains of Christmas';
+  //font-size: 22px;*/
+}
+#SantaWorkshop{
+  justify-content: space-around;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  text-align:center;
+}
+#SantaWorkshop a{
+  color:black;
+  text-decoration:none;
+  display:flex;
+  
+  
+}
+#SantaWorkshop a:hover{
+  text-decoration:underline;
+  color:green;
+
+  
+}
+#SantaWorkshop h1{
+  font-size:2.5em;
+  font-family:'christmas card';
+  color:gold;
+  text-align:center;
+}
+#propro{
+  display:flex;
+  justify-content:center;
+  gap:100px;
+}
+.project-box {
+    width: 200px;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #ffffff;
+    border: 2px solid #ff4d4d;
+    border-radius: 3em;
+}
+.project-box a {
+    font-size: 1.1em;
+    font-weight: bold;
+}
+.project-box:hover {
+    transform: translateY(-8px);
+}
+
+.project-box:nth-child(1) {
+    background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRoR4yg8sPUqgyOnaVmbfOOU7t-uZQiMxWyZSVRBMpbNvK33kzpt8RywnPR-mhBf4f1UTc&usqp=CAU');
+}
+
+.project-box:nth-child(2) {
+  background-image:url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTJjHDCK4Pm77UGvqO2KIK1dut7Ej90uFyYIB1Hy4j5KFUNGw9dlN06vm6UOID8yeVsrhQ&usqp=CAU'); 
+}
+.project-box:nth-child(3) {
+    background-image: url('https://play-lh.googleusercontent.com/U6hu7q67BaibfGfG2WtJxr0e8WC-xMBqbH_FTJpOR-sSaGGQiEVuKxvvRslmn9uozSU=w240-h480-rw'); 
+}
+
+.project-box:nth-child(4) {
+    background-image: url('https://png.pngtree.com/png-vector/20241030/ourmid/pngtree-merry-christmas-character-santa-claus-with-gifts-and-postcard-png-image_14201678.png');
+}
+
+#all{
+  text-align:center;
+  text-family: "Lucida Console", "Courier New", monospace;
+  color:gold;
+}
+#pp{
+   background-color:#8FBC8B;
+  height:50%;
+  width:50%;
+  align-items:center;
+  font-size:20px;
+  margin-left: auto;
+   margin-right: auto;
+  border-radius:0.3em;
+  font-family: 'Mountains of Christmas';
+}
+
+#cont-Santa{
+  text-align:center;
+  font: caption;
+  color:white;
+}
+
+
+#Gift-Tracker {
+  font-family: 'Ubuntu', sans-serif;
+  position: relative;
+}
+
+#main {
+  width: 100%;
+  height: 100vh; 
+  background-image: url('https://source.unsplash.com/random/1000x1000');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: relative; 
+}
+
+.countdownContainer {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.5);
+  padding: 20px;
+  border-radius: 5px;
+}
+
+.christmas {
+  font-size: 4rem;
+  text-transform: uppercase;
+}
+
+.counter {
+  font-size: 4rem;
+}
+
+@media (max-width: 1200px) {
+  .christmas {
+    font-size: 3rem;
+    text-transform: uppercase;
+  }
+  .counter {
+    font-size: 2rem;
+  }
+}
+
+/*#Gift-Tracker {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    font: 80%/1.25 Helvetica Neue, Helvetica, Arial, sans-serif;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+  margin-left:auto;
+  margin-right:auto;
+}
+
+#xmas_countdown {
+    width: 130px;
+    text-align: center;
+    position: relative;
+    border: 2px #61AD65 solid;
+    border-radius: 3px;
+    background: white;
+    font-weight: 600;
+    box-shadow: 0 2px 5px rgba(#000, .16), 0 2px 3px rgba(#000, .12);
+    svg {
+        width: 130px;
+        position: absolute;
+        top: -40px;
+        left: 0;
+        .st5 {fill: #C13D2C;}
+        .st6 {fill: #E64E3D;}
+    }
+    #message2 {
+        font-size: 1.3em;
+        background: #61AD65;
+        color: white;
+        text-transform: uppercase;
+        padding: 5px 0;
+        text-shadow: 1px 1px 1px #5A5A5A;
+    }
+    #countdown {
+        font-size: 5em;
+        color: #E64E3D;
+        line-height: 60px;
+    }
+}*/
+
+#count{
+  color:white;
+  font-family: "serif";
+  text-align:center;
+  padding:35px;
+}
